@@ -1,0 +1,5 @@
+name: club.cpacket.enderchestclearer.EnderChestClearer
+version: ${project.version}
+main: club.cpacket.enderchestclearer.EnderChestClearer
+authors: [ CPacketCustomPayload ]
+description: Clears Ender Chests and prevents them lagging your server.
