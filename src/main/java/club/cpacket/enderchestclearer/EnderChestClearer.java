@@ -9,9 +9,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.annotation.plugin.Description;
+import org.bukkit.plugin.java.annotation.plugin.LogPrefix;
+import org.bukkit.plugin.java.annotation.plugin.Plugin;
+import org.bukkit.plugin.java.annotation.plugin.author.Author;
 
 import java.util.concurrent.TimeUnit;
 
+@Plugin(name = "EnderChestClearer", version = "1.0")
+@Description(value = "Clears Ender Chests and prevents them lagging your server.")
+@LogPrefix(value = "EnderChestClearer")
+@Author(value = "CPacketCustomPayload")
 public final class EnderChestClearer extends JavaPlugin implements Listener {
 
     private static final Object2LongArrayMap<Block> enderChestMap = new Object2LongArrayMap<>();
